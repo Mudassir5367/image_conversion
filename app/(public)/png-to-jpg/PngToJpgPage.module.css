@@ -1,0 +1,206 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9fafb;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .uploadBtn {
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+  
+  .uploadBtn:hover {
+    background: #1e40af;
+  }
+  
+  .clearBtn {
+    background: #f87171;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+  
+  .clearBtn:hover {
+    background: #dc2626;
+  }
+  
+  .hiddenInput {
+    display: none;
+  }
+  
+  /* Drop Zone */
+  .dropZone {
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 40px;
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 500;
+    background: #f8fafc;
+    margin-bottom: 20px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .dragActive {
+    background: #e0f2fe;
+    border-color: #3b82f6;
+    color: #1e3a8a;
+  }
+  
+  .error {
+    color: #dc2626;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .previewWrapper {
+    margin-top: 20px;
+  }
+  
+  .previewImg {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 15px;
+  }
+  
+  .downloadBtn {
+    color: #fff;
+    background: #16a34a;
+    border-radius: 6px;
+    margin: 10px auto 0;
+    padding: 16px 32px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: block;
+    width: 300px;
+  }
+  
+  .downloadBtn:hover {
+    background: #15803d;
+  }
+
+  .converterTabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .tabBtn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .tabBtn:hover {
+    background: #2563eb;
+    color: #fff;
+  }
+  
+  .activeTab {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .snackbar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ef4444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    animation: fadeInOut 3s ease forwards;
+  }
+
+  .previewWrapper {
+    text-align: center; /* keeps h2 and download centered */
+  }
+  .previewWrapper a{
+    text-align: center; /* keeps h2 and download centered */
+  }
+  
+  .previewContainer {
+    position: relative; /* needed for crossBtn absolute positioning */
+    display: inline-block; /* so cross stays attached to image */
+  }
+  
+  .previewImg {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crossBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .crossBtn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    10%, 90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  }
+  
